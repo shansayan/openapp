@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open My Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <script>
+    // Try to open the app
+    window.location = "shansayan://menu";
+
+    // If app not installed → go to Play Store after 1.5s
+    setTimeout(function() {
+      window.location = "https://play.google.com/store/apps/details?id=com.shansayan.mygame";
+    }, 1500);
+  </script>
+</head>
+<body>
+  <h2>Opening My Game...</h2>
+  <p>If nothing happens, <a href="https://play.google.com/store/apps/details?id=com.shansayan.mygame">click here</a>.</p>
+</body>
+</html>
